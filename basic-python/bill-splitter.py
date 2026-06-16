@@ -11,5 +11,7 @@ running_total += appetizers + main_courses + desserts + drinks
 print('Total bill so far:', running_total)
 
 tip=running_total * 0.25
-
 print(f'Tip amount: {tip}')
+running_total += tip
+
+print(f'Total with tip: {running_total}')
