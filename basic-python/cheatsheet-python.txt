@@ -1,0 +1,76 @@
+# This is a comment
+# print("This code will not run.")
+print("This will run.")  # Comments are ignored by Python
+
+========================Type Conversion============================
+type(42)                # <class 'int'>
+type(3.14)              # <class 'float'>
+type("Hello")           # <class 'str'>
+type(True)              # <class 'bool'>
+type(None)              # <class 'NoneType'>
+
+isinstance(3.14, float)  # True
+issubclass(int, object)  # True - everything inherits from object
+
+========================Basic Assignment============================
+name = "Leo"           # String
+age = 7                # Integer
+height = 5.6           # Float
+is_cat = True          # Boolean
+flaws = None           # None type
+
+========================Parallel & Chained Assignments============================
+x, y = 10, 20          # Assign multiple values
+a = b = c = 0          # Give same value to multiple variables
+
+========================Augmented Assignments============================
+counter += 1
+numbers += [4, 5]
+permissions |= write
+
+=======================strings==========================
+single = 'Hello'
+double = "World"
+multi = """Multiple
+line string"""
+
+greeting = "me" + "ow!"  # "meow!"
+repeat = "Meow!" * 3     # "Meow!Meow!Meow!"
+length = len("Python")   # 6
+
+===================String Methods=======================
+"a".upper()                     # "A"
+"A".lower()                     # "a"
+" a ".strip()                   # "a"
+"abc".replace("bc", "ha")       # "aha"
+"a b".split()                   # ["a", "b"]
+"-".join(["a", "b"])            # "a-b"
+
+====================String Indexing & Slicing===============
+text = "Python"
+text[0]      # "P" (first)
+text[-1]     # "n" (last)
+text[1:4]    # "yth" (slice)
+text[:3]     # "Pyt" (from start)
+text[3:]     # "hon" (to end)
+text[::2]    # "Pto" (every 2nd)
+text[::-1]   # "nohtyP" (reverse)
+
+=============================String Formatting===========================
+# f-strings
+name = "Aubrey"
+age = 2
+f"Hello, {name}!"               # "Hello, Aubrey!"
+f"{name} is {age} years old"    # "Aubrey is 2 years old"
+f"Debug: {age=}"                # "Debug: age=2"
+
+# Format method
+template = "Hello, {name}! You're {age}."
+template.format(name="Aubrey", age=2)    # "Hello, Aubrey! You're 2."
+
+=======================Raw Strings==========================
+# Normal string with an escaped tab
+"This is:\tCool."       # "This is:    Cool."
+
+# Raw string with escape sequences
+r"This is:\tCool."      # "This is:\tCool."
