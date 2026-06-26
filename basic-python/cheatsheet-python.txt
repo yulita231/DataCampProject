@@ -74,3 +74,39 @@ template.format(name="Aubrey", age=2)    # "Hello, Aubrey! You're 2."
 
 # Raw string with escape sequences
 r"This is:\tCool."      # "This is:\tCool."
+
+=======================Arithmetic Operators==========================
+10 + 3    # 13
+10 - 3    # 7
+10 * 3    # 30
+10 / 3    # 3.3333333333333335
+10 // 3   # 3
+10 % 3    # 1
+2 ** 3    # 8
+
+abs(-5)              # 5
+round(3.7)           # 4
+round(3.14159, 2)    # 3.14
+min(3, 1, 2)         # 1
+max(3, 1, 2)         # 3
+sum([1, 2, 3])       # 6
+
+==========================Conditionals===========================
+Python uses indentation for code blocks
+Use 4 spaces per indentation level
+
+if age < 13:
+    category = "child"
+elif age < 20:
+    category = "teenager"
+else:
+    category = "adult"
+============================================
+if age >= 18 and has_car:
+    print("Roadtrip!")
+
+if is_weekend or is_holiday:
+    print("No work today.")
+
+if not is_raining:
+    print("You can go outside.")
